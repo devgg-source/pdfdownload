@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 const petitionSchema = mongoose.Schema(
   {
     sno: {
-      type: number,
+      type: Number,
       required: true,
     },
-    petitionername: {
+    petitionerName: {
       type: String,
       required: true,
     },
@@ -14,11 +14,11 @@ const petitionSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    aadharno: {
+    aadharNumber: {
       type: String,
       required: true,
     },
-    smartcardno: {
+    smartCardNumber: {
       type: String,
       required: true,
     },
@@ -26,7 +26,7 @@ const petitionSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    villagename: {
+    villageName: {
       type: String,
       required: true,
     },
