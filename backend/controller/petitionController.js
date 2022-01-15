@@ -29,4 +29,12 @@ const addPetition = asyncHandler(async (req, res) => {
   res.status(201).json(createdPetition);
 });
 
-export { addPetition };
+//@desc      Get all petitions
+//@route     GET /api/petitions/
+//@access    public
+const getPetitions = asyncHandler(async (req, res) => {
+  const petitions = await Petition.find({});
+  res.json(petitions);
+});
+
+export { addPetition, getPetitions };
