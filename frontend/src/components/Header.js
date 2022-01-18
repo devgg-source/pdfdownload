@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container-fluid">
         <h2 className="navbar-brand">Munkalam</h2>
         <Link className="btn btn-create" to="/new">
-          <i className="fa fa-plus"></i> New Record
+          <i className="fa fa-plus"></i> New Petition
         </Link>
       </div>
     </nav>
